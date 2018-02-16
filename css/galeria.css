@@ -1,0 +1,80 @@
+/* According to screensize.es the smallest screen size there is for a smartphone belongs to Apple iPhone 3GS, its width is 320 pixels. So that will be our card's maximum width. And when that break point is encounterd it will occupy a whole row (col-sm-12).
+  BUT THEN! i realized that elements within the container and the grid are resized automatically
+*/
+.card {
+/*   padding: 10px; */
+  
+/*   outer margin */
+  margin: 10px 5px;
+/*   card size */
+  width: 300px;
+  height: 400px;
+  
+  text-align: center;
+/*   background: green; */
+/*   the container is rouded, to help the image stay inside it, we hide its corners.
+  ALSO! this avoid that when the image is transformed, it doesn't break its container'*/
+  overflow: hidden;
+}
+
+.cardImage{
+/*   Image size to fit the container */
+  height:250px; 
+  width:300px;
+/*   preserve image ratio is not necessary*/
+/*   object-fit: cover; */
+/*   background-size: 210%; */
+  
+   backgound-position: center center;
+  background-size: 87%;
+    backgound-position: center center;
+  background-repeat: no-repeat;
+  
+  filter: blur(0px);
+  filter: brightness(100%);
+  transition: filter 0.5s, transform 0.5s;
+  
+}
+
+.card:hover .cardImage{
+  filter: blur(10px);
+  filter: brightness(0%);
+  transform: scale(2.19);
+}
+
+.cardDescription{
+  transition: transform 0.5s;
+}
+
+.card:hover .cardDescription {
+  transform: translateY(150px);
+}
+
+.title{
+  margin: 20px 0;
+}
+
+
+.cardImageContent{
+  padding:0;
+  height:300px; 
+    width:100%;
+    color:white;
+/* translate the image to the middle */
+/*   transform: translateY(150px); */
+/*   set the position relative to the parent */
+    position: absolute;
+
+  opacity: 0;
+    transition: opacity 0.5s;
+/*   using the z-index to place the hidden card description on top of the card image */
+    z-index: 3;
+}
+
+.card:hover .cardImageContent{
+  opacity: 1;
+}
+
+.lineaDecoracion{
+  display:inline-block; width:20px;background-color:white;margin:5px 2px
+}
