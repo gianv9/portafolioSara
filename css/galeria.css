@@ -8,7 +8,7 @@
   margin: 10px 5px;
 /*   card size */
   width: 300px;
-  height: 400px;
+  height: 320px;
   
   text-align: center;
 /*   background: green; */
@@ -19,15 +19,15 @@
 
 .cardImage{
 /*   Image size to fit the container */
-  height:250px; 
+  height:320px; 
   width:300px;
 /*   preserve image ratio is not necessary*/
 /*   object-fit: cover; */
 /*   background-size: 210%; */
   
-   backgound-position: center center;
+   /*background-position: center center;*/
   background-size: 100%;
-    backgound-position: center center;
+    background-position: center center;
   background-repeat: no-repeat;
   
   filter: blur(0px);
@@ -42,13 +42,13 @@
   transform: scale(2.19);
 }
 
-.cardDescription{
+/*.cardDescription{
   transition: transform 0.5s;
 }
 
 .card:hover .cardDescription {
   transform: translateY(150px);
-}
+}*/
 
 .title{
   margin: 20px 0;
@@ -57,7 +57,7 @@
 
 .cardImageContent{
   padding:0;
-  height:300px; 
+  height:320px; 
     width:100%;
     color:white;
 /* translate the image to the middle */
