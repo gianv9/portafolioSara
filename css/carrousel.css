@@ -1,0 +1,23 @@
+#carrousel, .carousel, .imagen-carrousel{
+	height: 70vh;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.imagen-carrousel{
+	object-fit: cover;
+	/*object-position: 50% 0;*/
+	/*border-radius: 100%;*/
+	  background-size: 100%;
+  background-position: 30% center;
+  background-repeat: no-repeat;
+}
+
+#carrousel {
+	margin-top: 0;
+}
+
+#caprichitos-header{
+	background-position: 0 17%;
+}

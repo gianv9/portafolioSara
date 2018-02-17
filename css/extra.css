@@ -1,0 +1,25 @@
+#info-sara{
+    width: 65%;
+	margin-left: 15%;
+}
+
+.icono{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.icono-mediano{
+	width: 40px;
+	height: 40px;
+}
+
+.icono-blanco{
+	filter: invert(100%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators{
+	filter: invert(100%);
+}

@@ -1,8 +1,7 @@
 body{
-  font-family: 'Roboto', sans-serif;
-  background-color: #563d7c;
-  padding: 0;
-  margin: 0;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Poiret One', cursive;
+  background-color: #cccaf9;
 }
 
 /* According to screensize.es the smallest screen size there is for a smartphone belongs to Apple iPhone 3GS, its width is 320 pixels. So that will be our card's maximum width. And when that break point is encounterd it will occupy a whole row (col-sm-12).
@@ -22,6 +21,8 @@ body{
 /*   the container is rouded, to help the image stay inside it, we hide its corners.
   ALSO! this avoid that when the image is transformed, it doesn't break its container'*/
   overflow: hidden;
+  font-size: 1.5em;
+  border-radius: 2%;
 }
 
 .cardImage{
@@ -58,7 +59,7 @@ body{
 }*/
 
 .title{
-  margin: 20px 0;
+  padding: 0px 10px;
 }
 
 
@@ -67,6 +68,7 @@ body{
   height:320px; 
     width:100%;
     color:white;
+    background-color: #1e1d37;
 /* translate the image to the middle */
 /*   transform: translateY(150px); */
 /*   set the position relative to the parent */
@@ -83,13 +85,14 @@ body{
 }
 
 .lineaDecoracion{
-  display:inline-block; width:20px;background-color:white;margin:5px 2px
+  display:inline-block; width:5px;background-color:white;margin:5px 2px
 }
 
 a, a:link, a:hover{
   color: white;
 }
 
-#sara {
-    max-width: none;
+#sara p{
+    margin: 0;
 }
+
